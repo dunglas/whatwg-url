@@ -2,7 +2,7 @@
 Whatwg-url is a spec-compliant URL parser written in Go. See [WHATWG](https://url.spec.whatwg.org/#url-parsing) website
 for the specification.
 
-> ![NOTE]
+> [!NOTE]
 >
 > This is a fork of [github.com/nlnwa/whatwg-url](https://github.com/nlnwa/whatwg-url) intended to be used by
 > [github.com/dunglas/go-urlpattern](https://github.com/dunglas/go-urlpattern).
