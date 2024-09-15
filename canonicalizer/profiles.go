@@ -22,7 +22,7 @@ import (
 
 	"golang.org/x/text/encoding/charmap"
 
-	"github.com/nlnwa/whatwg-url/url"
+	"github.com/dunglas/whatwg-url/url"
 )
 
 var LaxPathPercentEncodeSet = url.PathPercentEncodeSet.Clear(0x2E, 0x3C, 0x3E)

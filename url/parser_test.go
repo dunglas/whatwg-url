@@ -175,7 +175,7 @@ func BenchmarkParse(b *testing.B) {
 }
 
 func BenchmarkIssue6(b *testing.B) {
-	// https://github.com/nlnwa/whatwg-url/issues/6
+	// https://github.com/dunglas/whatwg-url/issues/6
 	for i := 10; i <= 20; i++ {
 		n := 1 << i
 		b.Run(fmt.Sprint(n), func(b *testing.B) {
@@ -194,7 +194,7 @@ func BenchmarkIssue6(b *testing.B) {
 }
 
 func BenchmarkIssue8(b *testing.B) {
-	// https://github.com/nlnwa/whatwg-url/issues/8
+	// https://github.com/dunglas/whatwg-url/issues/8
 	for i := 10; i <= 20; i++ {
 		n := 1 << i
 		b.Run(fmt.Sprint(n), func(b *testing.B) {

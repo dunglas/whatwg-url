@@ -17,7 +17,7 @@
 package url
 
 import (
-	"github.com/nlnwa/whatwg-url/errors"
+	"github.com/dunglas/whatwg-url/errors"
 )
 
 // handleError handles an error according to the options set for the parser

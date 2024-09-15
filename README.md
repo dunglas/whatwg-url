@@ -2,15 +2,22 @@
 Whatwg-url is a spec-compliant URL parser written in Go. See [WHATWG](https://url.spec.whatwg.org/#url-parsing) website
 for the specification.
 
+> ![NOTE]
+>
+> This is a fork of [github.com/nlnwa/whatwg-url](https://github.com/nlnwa/whatwg-url) intended to be used by
+> [github.com/dunglas/go-urlpattern](https://github.com/dunglas/go-urlpattern).
+>
+> This fork may be archived if [nlnwa/whatwg-url#27](https://github.com/nlnwa/whatwg-url/pull/27) get merged.
+
 ## Status
 Whatwg-url parser is up to date as of [24 May 2023](https://url.spec.whatwg.org/commit-snapshots/eee49fdf4f99d59f717cbeb0bce29fda930196d4/)
 and passes all relevant tests from [web-platform-tests](https://github.com/web-platform-tests/wpt/tree/master/url)
 
 ## Usage
-API is similar to [Chapter 6 in WHATWG URL Standard](https://url.spec.whatwg.org/#api). See [documentation](https://pkg.go.dev/github.com/nlnwa/whatwg-url) for details.
+API is similar to [Chapter 6 in WHATWG URL Standard](https://url.spec.whatwg.org/#api). See [documentation](https://pkg.go.dev/github.com/dunglas/whatwg-url) for details.
 
 ```go
-import "github.com/nlnwa/whatwg-url/url"
+import "github.com/dunglas/whatwg-url/url"
 
 url, _ := url.Parse("http://example.com:80/a?b#c")
 fmt.Println(url.Scheme())    // http
@@ -28,7 +35,7 @@ fmt.Println(url)             // http://example.com/a?b#c
 
 ### Options
 The default parser instance follows the WHATWG URL Standard. To adapt parsing to other needs, create a new parser
-instance and configure it with [options](https://pkg.go.dev/github.com/nlnwa/whatwg-url/url#ParserOption).
+instance and configure it with [options](https://pkg.go.dev/github.com/dunglas/whatwg-url/url#ParserOption).
 
 example:
 
@@ -38,7 +45,7 @@ p := url.NewParser(url.WithAcceptInvalidCodepoints(), url.WithCollapseConsecutiv
 
 ### Canonicalization
 If you want canonicalization beyond what's described in the standard, you can use the 
-[Canonicalizer API](https://pkg.go.dev/github.com/nlnwa/whatwg-url/canonicalizer).
+[Canonicalizer API](https://pkg.go.dev/github.com/dunglas/whatwg-url/canonicalizer).
 You can define your own canonicalization profile:
 
 ```go

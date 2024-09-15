@@ -18,7 +18,8 @@ package canonicalizer_test
 
 import (
 	"fmt"
-	"github.com/nlnwa/whatwg-url/canonicalizer"
+
+	"github.com/dunglas/whatwg-url/canonicalizer"
 )
 
 func ExampleNew() {

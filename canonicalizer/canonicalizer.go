@@ -19,8 +19,8 @@ package canonicalizer
 import (
 	"strings"
 
-	"github.com/nlnwa/whatwg-url/errors"
-	"github.com/nlnwa/whatwg-url/url"
+	"github.com/dunglas/whatwg-url/errors"
+	"github.com/dunglas/whatwg-url/url"
 )
 
 func New(opts ...url.ParserOption) url.Parser {

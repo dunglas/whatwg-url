@@ -26,7 +26,7 @@ import (
 
 	"github.com/bits-and-blooms/bitset"
 
-	"github.com/nlnwa/whatwg-url/errors"
+	"github.com/dunglas/whatwg-url/errors"
 )
 
 func NewParser(opts ...ParserOption) Parser {

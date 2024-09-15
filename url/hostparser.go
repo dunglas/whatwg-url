@@ -26,7 +26,7 @@ import (
 
 	"golang.org/x/net/idna"
 
-	"github.com/nlnwa/whatwg-url/errors"
+	"github.com/dunglas/whatwg-url/errors"
 )
 
 // parseHost parses the host part of the input string.

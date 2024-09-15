@@ -1,6 +1,6 @@
 package canonicalizer
 
-import "github.com/nlnwa/whatwg-url/url"
+import "github.com/dunglas/whatwg-url/url"
 
 // canonParserOption configures how we canonicalize a URL.
 type canonParserOption interface {
